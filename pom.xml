@@ -68,6 +68,7 @@
                 <configuration>
                     <skipFeatureVersion>true</skipFeatureVersion>
                     <pushRemote>true</pushRemote>
+                    <postReleaseGoals>deploy</postReleaseGoals>
                     <!-- optional configuration -->
                 </configuration>
             </plugin>
