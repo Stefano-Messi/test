@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <name>demo</name>
     <description>Demo project for Spring Boot and mvn jgitflow</description>
 
@@ -68,6 +68,7 @@
                 <configuration>
                     <skipFeatureVersion>true</skipFeatureVersion>
                     <pushRemote>true</pushRemote>
+                    <postReleaseGoals>deploy</postReleaseGoals>
                     <!-- optional configuration -->
                 </configuration>
             </plugin>
