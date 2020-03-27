@@ -14,9 +14,16 @@
     <name>demo</name>
     <description>Demo project for Spring Boot and mvn jgitflow</description>
 
+
+    <scm>
+        <connection>scm:https://github.com/Stefano-Messi/test.git</connection>
+        <developerConnection>scm:https://github.com/Stefano-Messi/test.git</developerConnection>
+        <url>https://github.com/Stefano-Messi/test</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <properties>
         <java.version>1.8</java.version>
-        <AWS_DEFAULT_REGION>eu-central-1</AWS_DEFAULT_REGION>
     </properties>
 
     <distributionManagement>
@@ -25,7 +32,6 @@
             <url>s3://stefanomessi/release</url>
         </repository>
     </distributionManagement>
-
 
     <dependencies>
         <dependency>
