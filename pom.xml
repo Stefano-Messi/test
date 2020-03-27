@@ -16,7 +16,19 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <AWS_DEFAULT_REGION>eu-central-1</AWS_DEFAULT_REGION>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>my-repo-bucket-snapshot</id>
+            <url>s3://smessis3/repository/snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>my-repo-bucket-release</id>
+            <url>s3://smessis3/repository/release</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -38,6 +50,13 @@
     </dependencies>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>com.gkatzioura.maven.cloud</groupId>
+                <artifactId>s3-storage-wagon</artifactId>
+                <version>1.8</version>
+            </extension>
+        </extensions>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
