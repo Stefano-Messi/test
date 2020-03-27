@@ -70,6 +70,10 @@
                     <pushRemote>true</pushRemote>
                     <postReleaseGoals>deploy</postReleaseGoals>
                     <!-- optional configuration -->
+                    <gitFlowConfig>
+                        <developmentBranch>qa</developmentBranch>
+                        <productionBranch>preprod</productionBranch>
+                    </gitFlowConfig>
                 </configuration>
             </plugin>
         </plugins>
