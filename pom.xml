@@ -48,6 +48,8 @@
                 <artifactId>gitflow-maven-plugin</artifactId>
                 <version>1.14.0</version>
                 <configuration>
+                    <skipFeatureVersion>true</skipFeatureVersion>
+                    <pushRemote>true</pushRemote>
                     <!-- optional configuration -->
                 </configuration>
             </plugin>
