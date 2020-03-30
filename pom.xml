@@ -73,10 +73,8 @@
                 <version>1.14.0</version>
                 <configuration>
                     <skipFeatureVersion>true</skipFeatureVersion>
-                    <useSnapshotInHotfix>true</useSnapshotInHotfix>
                     <pushRemote>true</pushRemote>
                     <postReleaseGoals>deploy</postReleaseGoals>
-                    <postReleaseGoals>postHotfixGoals</postReleaseGoals>
                     <!-- optional configuration -->
                     <gitFlowConfig>
                         <developmentBranch>qa</developmentBranch>
