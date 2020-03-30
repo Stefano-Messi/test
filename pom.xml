@@ -73,7 +73,7 @@
                 <version>1.14.0</version>
                 <configuration>
                     <skipFeatureVersion>true</skipFeatureVersion>
-                    <skipFeatureVersion>true</skipFeatureVersion>
+                    <useSnapshotInHotfix>true</useSnapshotInHotfix>
                     <pushRemote>true</pushRemote>
                     <postReleaseGoals>deploy</postReleaseGoals>
                     <postReleaseGoals>postHotfixGoals</postReleaseGoals>
