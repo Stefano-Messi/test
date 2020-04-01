@@ -73,6 +73,7 @@
                 <version>1.14.0</version>
                 <configuration>
                     <pushRemote>true</pushRemote>
+                    <keepBranch>true</keepBranch>
                     <postReleaseGoals>deploy</postReleaseGoals>
                     <skipFeatureVersion>true</skipFeatureVersion>
                     <useSnapshotInHotfix>true</useSnapshotInHotfix>
